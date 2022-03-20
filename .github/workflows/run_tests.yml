@@ -24,4 +24,5 @@ jobs:
     - name: Test with pytest
       run: |
         pytest
-        pylint
+        pylint test_count_words.py
+        pylint count_words.py
