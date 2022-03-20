@@ -4,6 +4,7 @@ This module tests the module count_words.py
 # pylint: disable=R0903
 # pylint: disable=R0201
 # pylint: disable=C0303
+# pylint: disable=W0622
 import pytest
 from count_words import WordCounter
 
@@ -87,4 +88,7 @@ MY_TESTS = [
 
 @pytest.mark.parametrize('input, output', MY_TESTS)
 def test_all_in_one_function(input, output):
+    """
+    Create all tests in the class TestWordCounter
+    """
     assert WordCounter(input).count_words() == output
